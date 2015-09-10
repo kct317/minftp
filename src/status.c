@@ -1,0 +1,31 @@
+#include "sbftp.h"
+
+const char *ftp_send_msg[] = {
+	"150 File status okay; about to open data connection.\r\n",
+	"150 here comes the directory listing.\r\n",
+	"200 Succeed to create data connection.\r\n",
+	"200 Welcome to sbftp server.\r\n",
+	"220 Only one user is anonymous.\r\n",
+	"221 Goodbye.\r\n",
+	"226 list ok.\r\n",
+	"230 Login successful.\r\n",
+	"250 RMD command successful.\r\n",
+	"250 Command succeed.\r\n",
+	"250 File sucessfully deleted.\r\n",
+	"257 Directory successfully created:\r\n",
+	"331 Please specify the password.\r\n",
+	"421 Failed to create data connection.\r\n",
+	"430 Invalid username or password.\r\n",
+	"450 No such file or directory.\r\n",
+	"500 Unknown command.\r\n",
+	"501 Arguments wrong, the file or directory does not exists!\r\n",
+	"501 Diretory or file name is too long.\r\n",
+	"501 Can't change directory.\r\n",
+	"501 Can't rename this file.\r\n",
+	"503 You have already logged in.\r\n",
+	"530 Login incorrect.\r\n",
+	"530 Please login with USER and PASS.\r\n",
+	"550 Permission denied.\r\n",
+	"550 No such file or directory.\r\n",
+};
+
